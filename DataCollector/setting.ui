@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>584</width>
+    <height>289</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>连接设定</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Biglion_2.ico</normaloff>Biglion_2.ico</iconset>
+  </property>
+  <widget class="QLineEdit" name="Host_IP">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>30</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>(默认) big7lion.win</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Host_port">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>80</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>(默认) 19910</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Host_ID">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>129</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>(必填)</string>
+   </property>
+  </widget>
+  <widget class="QTreeWidget" name="user_List">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>11</y>
+     <width>391</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <property name="animated">
+    <bool>true</bool>
+   </property>
+   <column>
+    <property name="text">
+     <string>在线用户列表</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>登陆时间</string>
+    </property>
+   </column>
+   <item>
+    <property name="text">
+     <string>ID:hello</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>This is Demo</string>
+     </property>
+     <property name="text">
+      <string>17:23:10</string>
+     </property>
+    </item>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="Connect_exit_btn">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>260</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>270</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://control.big7lion.win&quot;&gt;控制台网页版&lt;/a&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="openExternalLinks">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>10</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HOST name/IP</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>60</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HOST PORT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>21</x>
+     <y>110</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>用户ID</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>32</x>
+     <y>161</y>
+     <width>111</width>
+     <height>83</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="Connect_server_btn">
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string>连接服务器</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="List_fresh_btn">
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string>刷新用户列表</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="expand_btn">
+      <property name="text">
+       <string>展开用户列表</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

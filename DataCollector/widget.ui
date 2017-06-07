@@ -1,0 +1,1881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>771</width>
+    <height>566</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PID水温控制</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Biglion_2.ico</normaloff>Biglion_2.ico</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="accessibleName">
+   <string>串口助手</string>
+  </property>
+  <widget class="QComboBox" name="comboBoxStopBit">
+   <property name="geometry">
+    <rect>
+     <x>34</x>
+     <y>137</y>
+     <width>69</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <item>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1.5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBoxDataBit">
+   <property name="geometry">
+    <rect>
+     <x>34</x>
+     <y>180</y>
+     <width>69</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBoxBaudRate">
+   <property name="geometry">
+    <rect>
+     <x>34</x>
+     <y>91</y>
+     <width>69</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="currentText">
+    <string>115200</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>115200</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>57600</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>43000</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>38400</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>19200</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>14400</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>9600</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>4800</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2400</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1200</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBoxCheckBit">
+   <property name="geometry">
+    <rect>
+     <x>34</x>
+     <y>226</y>
+     <width>69</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>None</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Odd</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Even</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBoxChooseSerial">
+   <property name="geometry">
+    <rect>
+     <x>34</x>
+     <y>41</y>
+     <width>69</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="currentText">
+    <string>COM1</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>COM1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM9</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM10</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM11</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM12</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM13</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM14</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM15</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM16</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM17</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM18</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM19</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM20</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM21</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM22</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM23</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM24</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM25</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM26</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM27</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM28</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM29</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM30</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM31</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM32</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM33</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM34</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM35</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM36</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM37</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM38</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM39</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM40</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM41</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM42</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM43</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM44</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM45</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM46</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM47</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM48</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM49</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM50</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM51</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM52</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM53</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM54</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM55</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM56</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM57</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM58</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM59</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM60</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>44</x>
+     <y>21</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>串口选择</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>71</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>波特率选择</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>121</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>停止位</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>51</x>
+     <y>165</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>数据位</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>210</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>校验位</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonSearchSerial">
+   <property name="geometry">
+    <rect>
+     <x>28</x>
+     <y>257</y>
+     <width>81</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>搜索串口</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonOpenSerial">
+   <property name="geometry">
+    <rect>
+     <x>28</x>
+     <y>286</y>
+     <width>81</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>打开串口</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="P_num">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>352</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="digitCount">
+    <number>3</number>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="I_num">
+   <property name="geometry">
+    <rect>
+     <x>261</x>
+     <y>352</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="digitCount">
+    <number>3</number>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="D_num">
+   <property name="geometry">
+    <rect>
+     <x>441</x>
+     <y>352</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="digitCount">
+    <number>3</number>
+   </property>
+  </widget>
+  <widget class="QSlider" name="P_Slider">
+   <property name="geometry">
+    <rect>
+     <x>28</x>
+     <y>400</y>
+     <width>160</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>-99</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="tickPosition">
+    <enum>QSlider::TicksAbove</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="I_Slider">
+   <property name="geometry">
+    <rect>
+     <x>218</x>
+     <y>400</y>
+     <width>160</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>-99</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="tickPosition">
+    <enum>QSlider::TicksAbove</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="D_Slider">
+   <property name="geometry">
+    <rect>
+     <x>398</x>
+     <y>400</y>
+     <width>160</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>-99</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="tickPosition">
+    <enum>QSlider::TicksAbove</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PID_Read_Button">
+   <property name="geometry">
+    <rect>
+     <x>574</x>
+     <y>360</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Read PID Setting</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PID_Send_Button">
+   <property name="geometry">
+    <rect>
+     <x>574</x>
+     <y>390</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>Send PID Setting</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PWMcyc_Set_Button">
+   <property name="geometry">
+    <rect>
+     <x>574</x>
+     <y>480</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>Set PWM Cyc</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="Aim_Temp_Slider">
+   <property name="geometry">
+    <rect>
+     <x>28</x>
+     <y>505</y>
+     <width>160</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>300</number>
+   </property>
+   <property name="maximum">
+    <number>990</number>
+   </property>
+   <property name="singleStep">
+    <number>1</number>
+   </property>
+   <property name="pageStep">
+    <number>100</number>
+   </property>
+   <property name="value">
+    <number>600</number>
+   </property>
+   <property name="sliderPosition">
+    <number>600</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="tickPosition">
+    <enum>QSlider::TicksAbove</enum>
+   </property>
+  </widget>
+  <widget class="QDial" name="Control_Mode_dial">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>470</y>
+     <width>50</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>switch in ON,OFF and Auto</string>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>3</number>
+   </property>
+   <property name="value">
+    <number>2</number>
+   </property>
+   <property name="sliderPosition">
+    <number>2</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="PWMcyc_Slider">
+   <property name="geometry">
+    <rect>
+     <x>218</x>
+     <y>505</y>
+     <width>160</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>500</number>
+   </property>
+   <property name="maximum">
+    <number>5000</number>
+   </property>
+   <property name="singleStep">
+    <number>100</number>
+   </property>
+   <property name="pageStep">
+    <number>1000</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="tickPosition">
+    <enum>QSlider::NoTicks</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Tempcyc_Set_Button">
+   <property name="geometry">
+    <rect>
+     <x>574</x>
+     <y>510</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>Set Temp Cyc</string>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="PWM_Cyc_num">
+   <property name="geometry">
+    <rect>
+     <x>258</x>
+     <y>465</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="digitCount">
+    <number>4</number>
+   </property>
+   <property name="intValue" stdset="0">
+    <number>500</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>440</y>
+     <width>54</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Control&lt;br&gt;Mode&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Temp_Set_Button">
+   <property name="geometry">
+    <rect>
+     <x>574</x>
+     <y>450</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>Set aim Temp</string>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="Temp_Cyc_num">
+   <property name="geometry">
+    <rect>
+     <x>438</x>
+     <y>464</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="digitCount">
+    <number>4</number>
+   </property>
+   <property name="intValue" stdset="0">
+    <number>200</number>
+   </property>
+  </widget>
+  <widget class="QSlider" name="Readcyc_Slider">
+   <property name="geometry">
+    <rect>
+     <x>398</x>
+     <y>504</y>
+     <width>160</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>200</number>
+   </property>
+   <property name="maximum">
+    <number>5000</number>
+   </property>
+   <property name="singleStep">
+    <number>100</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="tickPosition">
+    <enum>QSlider::NoTicks</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>426</y>
+     <width>671</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="P_label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>344</y>
+     <width>31</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>POLYA Regular</family>
+     <pointsize>28</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>P</string>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="I_label">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>344</y>
+     <width>21</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>POLYA Regular</family>
+     <pointsize>28</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>I</string>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="D_label">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>344</y>
+     <width>31</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>POLYA Regular</family>
+     <pointsize>28</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>D</string>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="P_label_2">
+   <property name="geometry">
+    <rect>
+     <x>28</x>
+     <y>456</y>
+     <width>41</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Aim&lt;br&gt;Temp&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="P_label_3">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>454</y>
+     <width>41</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;PWM&lt;br/&gt;Cyc&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="P_label_4">
+   <property name="geometry">
+    <rect>
+     <x>396</x>
+     <y>451</y>
+     <width>41</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Read&lt;br/&gt;Cyc&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="Aim_Temp_num">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>464</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="smallDecimalPoint">
+    <bool>false</bool>
+   </property>
+   <property name="digitCount">
+    <number>6</number>
+   </property>
+   <property name="segmentStyle">
+    <enum>QLCDNumber::Filled</enum>
+   </property>
+   <property name="intValue" stdset="0">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Controller_Mode_Status">
+   <property name="geometry">
+    <rect>
+     <x>697</x>
+     <y>357</y>
+     <width>61</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="toolTip">
+    <string>Show the current control mode</string>
+   </property>
+   <property name="toolTipDuration">
+    <number>2000</number>
+   </property>
+   <property name="statusTip">
+    <string>Show the current control mode</string>
+   </property>
+   <property name="whatsThis">
+    <string>Show the current control mode</string>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Auto&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>362</x>
+     <y>482</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Courier New</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>ms</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>542</x>
+     <y>481</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Courier New</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>ms</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="Curve_tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>129</x>
+     <y>17</y>
+     <width>641</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::East</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <property name="elideMode">
+    <enum>Qt::ElideNone</enum>
+   </property>
+   <property name="documentMode">
+    <bool>true</bool>
+   </property>
+   <property name="tabsClosable">
+    <bool>false</bool>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="tabBarAutoHide">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="Curve_tab">
+    <attribute name="title">
+     <string>Readtime Temp Curve</string>
+    </attribute>
+    <widget class="QCustomPlot" name="DrawWindows" native="true">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>30</y>
+       <width>591</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>272</x>
+       <y>4</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>李旭科书法 v1.4</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>温度曲线</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Repaint_button">
+     <property name="geometry">
+      <rect>
+       <x>369</x>
+       <y>6</y>
+       <width>61</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Consolas</family>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>redarw Temp curve  afresh</string>
+     </property>
+     <property name="text">
+      <string>Repaint</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>435</x>
+       <y>6</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>make the curve fit window</string>
+     </property>
+     <property name="text">
+      <string>Fit</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Temp_tab">
+    <attribute name="title">
+     <string>Temperature Records</string>
+    </attribute>
+    <widget class="QLCDNumber" name="current_Temp_num">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>40</y>
+       <width>131</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="digitCount">
+      <number>6</number>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="current_Temp_Box">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>150</y>
+       <width>241</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>435</x>
+       <y>13</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>李旭科书法 v1.4</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>当前温度</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>120</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>李旭科书法 v1.4</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>温度记录</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>20</y>
+       <width>21</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Local_Stream_Button">
+     <property name="geometry">
+      <rect>
+       <x>57</x>
+       <y>280</y>
+       <width>91</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>store PID and temperature data as .csv doc for excel</string>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>Local Stream</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>20</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>数据接收</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="SendData_NEW_LINE">
+     <property name="geometry">
+      <rect>
+       <x>139</x>
+       <y>175</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>NEW LINE</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="SendData">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>197</y>
+       <width>241</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor" stdset="0">
+      <cursorShape>IBeamCursor</cursorShape>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="PushButtonSendData">
+     <property name="geometry">
+      <rect>
+       <x>57</x>
+       <y>247</y>
+       <width>91</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>serial send data</string>
+     </property>
+     <property name="text">
+      <string>发送数据</string>
+     </property>
+     <property name="shortcut">
+      <string>Return</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="Read_Data_HEX">
+     <property name="geometry">
+      <rect>
+       <x>102</x>
+       <y>18</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>HEX</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="PushButtonClearData">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>247</y>
+       <width>91</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>clean the receive box</string>
+     </property>
+     <property name="text">
+      <string>清除接收</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="SendData_HEX">
+     <property name="geometry">
+      <rect>
+       <x>94</x>
+       <y>175</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>HEX</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="ReadData">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>39</y>
+       <width>241</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="AutoSend_checkbox">
+     <property name="geometry">
+      <rect>
+       <x>213</x>
+       <y>175</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AutoSend</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>176</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>数据发送</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Connect_DB_Button">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>280</y>
+       <width>91</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>connect to remote databases to store data</string>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>connect to DB</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="SaveData">
+     <property name="geometry">
+      <rect>
+       <x>237</x>
+       <y>16</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>save receive data as .txt doc</string>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>save</string>
+     </property>
+    </widget>
+    <zorder>Local_Stream_Button</zorder>
+    <zorder>label_7</zorder>
+    <zorder>SendData_NEW_LINE</zorder>
+    <zorder>SendData</zorder>
+    <zorder>PushButtonSendData</zorder>
+    <zorder>Read_Data_HEX</zorder>
+    <zorder>PushButtonClearData</zorder>
+    <zorder>SendData_HEX</zorder>
+    <zorder>ReadData</zorder>
+    <zorder>AutoSend_checkbox</zorder>
+    <zorder>label_8</zorder>
+    <zorder>Connect_DB_Button</zorder>
+    <zorder>SaveData</zorder>
+    <zorder>current_Temp_Box</zorder>
+    <zorder>line</zorder>
+    <zorder>current_Temp_num</zorder>
+    <zorder>label_13</zorder>
+    <zorder>label_14</zorder>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="statuslabel">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>525</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>540</y>
+     <width>721</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout"/>
+  </widget>
+  <widget class="QLabel" name="Control_Mode_icon">
+   <property name="geometry">
+    <rect>
+     <x>711</x>
+     <y>397</y>
+     <width>31</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/media_src_pack/media_src_pack/led-bulb.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonOpenSetting">
+   <property name="geometry">
+    <rect>
+     <x>28</x>
+     <y>314</y>
+     <width>81</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>连接设定</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>7</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>方正黄草_GBK</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;温控板上位机&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <zorder>Curve_tabWidget</zorder>
+  <zorder>comboBoxStopBit</zorder>
+  <zorder>comboBoxDataBit</zorder>
+  <zorder>comboBoxBaudRate</zorder>
+  <zorder>comboBoxCheckBit</zorder>
+  <zorder>comboBoxChooseSerial</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+  <zorder>pushButtonSearchSerial</zorder>
+  <zorder>pushButtonOpenSerial</zorder>
+  <zorder>P_num</zorder>
+  <zorder>I_num</zorder>
+  <zorder>D_num</zorder>
+  <zorder>P_Slider</zorder>
+  <zorder>I_Slider</zorder>
+  <zorder>D_Slider</zorder>
+  <zorder>PID_Read_Button</zorder>
+  <zorder>PID_Send_Button</zorder>
+  <zorder>PWMcyc_Set_Button</zorder>
+  <zorder>Aim_Temp_Slider</zorder>
+  <zorder>Control_Mode_dial</zorder>
+  <zorder>PWMcyc_Slider</zorder>
+  <zorder>Tempcyc_Set_Button</zorder>
+  <zorder>PWM_Cyc_num</zorder>
+  <zorder>label_9</zorder>
+  <zorder>Temp_Set_Button</zorder>
+  <zorder>Temp_Cyc_num</zorder>
+  <zorder>Readcyc_Slider</zorder>
+  <zorder>line_2</zorder>
+  <zorder>P_label</zorder>
+  <zorder>I_label</zorder>
+  <zorder>D_label</zorder>
+  <zorder>P_label_2</zorder>
+  <zorder>P_label_3</zorder>
+  <zorder>P_label_4</zorder>
+  <zorder>Aim_Temp_num</zorder>
+  <zorder>Controller_Mode_Status</zorder>
+  <zorder>label_11</zorder>
+  <zorder>label_12</zorder>
+  <zorder>statuslabel</zorder>
+  <zorder>verticalLayoutWidget</zorder>
+  <zorder>Control_Mode_icon</zorder>
+  <zorder>pushButtonOpenSetting</zorder>
+  <zorder>label_6</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>I_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>I_num</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>297</x>
+     <y>380</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>311</x>
+     <y>337</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>D_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>D_num</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>477</x>
+     <y>380</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>491</x>
+     <y>337</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>P_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>P_num</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>107</x>
+     <y>380</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>120</x>
+     <y>337</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Readcyc_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Temp_Cyc_num</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>477</x>
+     <y>484</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>488</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PWMcyc_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>PWM_Cyc_num</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>297</x>
+     <y>485</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>450</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
