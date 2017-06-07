@@ -128,7 +128,7 @@ void SyncThread::run()
             {
                 sync_action_flag = 0;
                 sync_query.clear();
-                QString query_string = QString("UPDATE `parameter_data` SET %1 = :d2 WHERE `user_ID`=:d3").arg(command2db(current_command));
+                QString query_string = QString("UPDATE `parameter_data` SET `%1` = :d2 WHERE `user_ID`=:d3").arg(command2db(current_command));
                 sync_query.prepare(query_string);
                 if(current_command == "option-sync")
                 {
