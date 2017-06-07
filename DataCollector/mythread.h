@@ -57,7 +57,7 @@ protected:
         if(!strTables.contains(current_ID))
         {
             qDebug()<<"no ID table exist";
-            query_string = QString("create table IF NOT EXISTS %1(ID INT NOT NULL,TEMP VARCHAR(20) NOT NULL,P INT NOT NULL,I INT NOT NULL,D INT NOT NULL,TIME VARCHAR(30),PRIMARY KEY (ID))").arg(current_ID);
+            query_string = QString("create table IF NOT EXISTS `%1` (ID INT NOT NULL,TEMP VARCHAR(20) NOT NULL,P INT NOT NULL,I INT NOT NULL,D INT NOT NULL,TIME VARCHAR(30),PRIMARY KEY (ID))").arg(current_ID);
             qDebug()<<query_string;
             if(query.exec(query_string))
             {
@@ -68,7 +68,7 @@ protected:
                 qDebug()<<query.lastError();
             }
             query.clear();
-            query_string = QString("alter table %1 modify ID INT auto_increment").arg(current_ID);
+            query_string = QString("alter table `%1` modify ID INT auto_increment").arg(current_ID);
             qDebug()<<query_string;
             if(query.exec(query_string))
             {
@@ -88,7 +88,7 @@ protected:
             msleep(5);
             if(data_write_falg)
             {
-                query.prepare(QString("insert into %1 (`TEMP`, `P`, `I`, `D`, `TIME`) values(?,?,?,?,?)").arg(current_ID));
+                query.prepare(QString("insert into `%1` (`TEMP`, `P`, `I`, `D`, `TIME`) values(?,?,?,?,?)").arg(current_ID));
                 query.bindValue(1,P_data);
                 query.bindValue(2,I_data);
                 query.bindValue(3,D_data);
@@ -96,7 +96,7 @@ protected:
                 query.bindValue(4,QTime::currentTime().toString(" hh:mm:ss"));
                 success = query.exec();
                 if(!success){
-                    qDebug() << "²åÈëÊ§°Ü£º" <<endl;
+                    qDebug() << "insert failed!" <<endl;
                 }
                 data_write_falg = 0;
             }
